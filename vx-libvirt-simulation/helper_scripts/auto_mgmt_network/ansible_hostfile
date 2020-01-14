@@ -1,0 +1,38 @@
+# Created by Topology-Converter v4.7.0
+#    Template Revision: v4.7.0
+#    https://github.com/cumulusnetworks/topology_converter
+#    using topology data from: test-evpn.dot
+
+
+
+
+[oob-switch]
+oob-mgmt-switch ansible_host=192.168.200.7
+
+
+
+
+
+
+
+[leaf]
+switch1-1 ansible_host=192.168.200.1
+switch1-2 ansible_host=192.168.200.2
+switch2-1 ansible_host=192.168.200.3
+switch2-2 ansible_host=192.168.200.4
+switch3-1 ansible_host=192.168.200.5
+switch3-2 ansible_host=192.168.200.6
+router1 ansible_host=192.168.200.101
+router2 ansible_host=192.168.200.102
+router3 ansible_host=192.168.200.103
+
+
+
+
+
+
+
+
+[all:vars]
+ansible_user=cumulus
+ansible_ssh_pass=CumulusLinux!

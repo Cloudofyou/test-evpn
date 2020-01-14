@@ -1,0 +1,36 @@
+# /etc/dhcp/dhcpd.hosts
+# Created by Topology-Converter v4.7.0
+#    Template Revision: v4.7.0
+#    https://github.com/cumulusnetworks/topology_converter
+#    using topology data from: test-evpn.dot
+
+group {
+
+  option domain-name-servers 192.168.200.254;
+  option domain-name "simulation";
+  #option routers 192.168.200.254;
+  option www-server 192.168.200.254;
+  option default-url = "http://192.168.200.254/onie-installer";
+
+
+host oob-mgmt-switch {hardware ethernet 44:38:39:00:00:33; fixed-address 192.168.200.7; option host-name "oob-mgmt-switch"; option cumulus-provision-url "http://192.168.200.254/ztp_oob.sh";  } 
+
+host switch1-1 {hardware ethernet 44:38:39:00:00:22; fixed-address 192.168.200.1; option host-name "switch1-1"; option cumulus-provision-url "http://192.168.200.254/ztp_oob.sh";  } 
+
+host switch1-2 {hardware ethernet 44:38:39:00:00:24; fixed-address 192.168.200.2; option host-name "switch1-2"; option cumulus-provision-url "http://192.168.200.254/ztp_oob.sh";  } 
+
+host switch2-1 {hardware ethernet 44:38:39:00:00:26; fixed-address 192.168.200.3; option host-name "switch2-1"; option cumulus-provision-url "http://192.168.200.254/ztp_oob.sh";  } 
+
+host switch2-2 {hardware ethernet 44:38:39:00:00:28; fixed-address 192.168.200.4; option host-name "switch2-2"; option cumulus-provision-url "http://192.168.200.254/ztp_oob.sh";  } 
+
+host switch3-1 {hardware ethernet 44:38:39:00:00:2a; fixed-address 192.168.200.5; option host-name "switch3-1"; option cumulus-provision-url "http://192.168.200.254/ztp_oob.sh";  } 
+
+host switch3-2 {hardware ethernet 44:38:39:00:00:2c; fixed-address 192.168.200.6; option host-name "switch3-2"; option cumulus-provision-url "http://192.168.200.254/ztp_oob.sh";  } 
+
+host router1 {hardware ethernet 44:38:39:00:00:2e; fixed-address 192.168.200.101; option host-name "router1"; option cumulus-provision-url "http://192.168.200.254/ztp_oob.sh";  } 
+
+host router2 {hardware ethernet 44:38:39:00:00:30; fixed-address 192.168.200.102; option host-name "router2"; option cumulus-provision-url "http://192.168.200.254/ztp_oob.sh";  } 
+
+host router3 {hardware ethernet 44:38:39:00:00:32; fixed-address 192.168.200.103; option host-name "router3"; option cumulus-provision-url "http://192.168.200.254/ztp_oob.sh";  } 
+}#End of static host group
+
