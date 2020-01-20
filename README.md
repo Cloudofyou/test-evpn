@@ -6,7 +6,7 @@ This is an Ansible demo which configures four Cumulus VX switches in a 3 site, 2
 
 ### Network Diagram:
 
-![Network Diagram](https://github.com/cloudofyou/test-evpn/blob/master/documentation/test-evpn.jpg)
+![Network Diagram](https://github.com/cloudofyou/test-evpn/blob/master/VHP-EVPN-Test.png)
 
 ### Initializing the Linux / libvirt demo environment:
 
